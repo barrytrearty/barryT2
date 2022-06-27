@@ -1,0 +1,206 @@
+#aboutme-section {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../data/barryt/bar-interior3.jpg");
+  background-size: cover;
+  background-position: center center;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.795);
+}
+
+#aboutCardHolder {
+  padding-top: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#aboutCardGrad {
+  position: relative;
+  transition: 0.3;
+}
+
+#aboutCard {
+  cursor: pointer;
+  position: relative;
+  width: 300px;
+  height: 400px;
+  /* background-color: #aab4db; */
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  transition: 0.5s;
+  /* border-radius: 20px 20px 0 0; */
+}
+
+/* .aboutCard.clicked {
+      transform: translate(50%);
+    } */
+
+.aboutDetails {
+  /* padding: 20px; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #cf4747;
+  opacity: 0.9;
+
+  /* border-radius: 10px; */
+}
+
+.aboutImgBox {
+  position: relative;
+  background-color: #cf4747;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transition: 1s;
+  /* border-radius: 10px; */
+}
+
+#aboutCard.clicked .aboutImgBox {
+  transform: rotateY(-180deg);
+}
+
+#aboutCard.clicked #menu-pic {
+  opacity: 0;
+}
+
+#aboutCard.clicked .menu-title {
+  opacity: 0;
+}
+
+#aboutCard.clicked .aboutContent {
+  opacity: 1;
+}
+
+.aboutImgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.aboutImgBox img:nth-child(2) {
+  transform: rotateY(180deg);
+}
+
+.aboutContent {
+  text-align: left;
+  font-size: 1.75rem;
+  opacity: 0;
+  transition: 0.6s;
+  color: black;
+  /* text-shadow: 2px 2px white; */
+}
+
+.aboutContent p {
+  color: black;
+  font-weight: 600;
+}
+
+/* #aboutCard:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+}
+
+#aboutCard:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(40px);
+  border-radius: 15px;
+}
+
+#aboutCard:before,
+#aboutCard:after {
+  background: linear-gradient(235deg, #8be479, #010615, #8be479);
+} */
+
+@font-face {
+  font-family: "written";
+  src: url("../../data/barryt/orange juice 2.0.ttf");
+}
+
+#aboutCard.clicked #aboutCardGrad {
+  width: 600px;
+}
+
+.menu-title {
+  /* font-family: "written"; */
+  font-weight: 600;
+  padding-top: 20px;
+  font-size: 50px;
+  transition: 0.75s;
+}
+
+/* .font-written {
+  font-size: 40px;
+  font-family: "written";
+} */
+
+#menu-pic {
+  width: 60%;
+  height: auto;
+  padding-left: 20%;
+  padding-top: 50%;
+  transition: 0.75s;
+}
+
+#emoji-pic {
+  width: 86%;
+  height: auto;
+  padding-right: 10%;
+  visibility: hidden;
+  /* padding-top: 10%; */
+}
+
+@media (min-width: 620px) {
+  #aboutCard.clicked {
+    transform: translate(50%);
+  }
+
+  #emoji-pic {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 1000px) {
+  #aboutme-section {
+    margin: auto;
+    width: 1000px;
+    background-position: center top;
+  }
+
+  .neon-text {
+    font-size: 175px;
+  }
+}
+
+@media (max-height: 700px) {
+  #welcome-section,
+  #aboutme-section,
+  #contact-section,
+  #project-section {
+    height: 680px;
+  }
+}

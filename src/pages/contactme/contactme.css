@@ -1,0 +1,71 @@
+#contact-section {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../data/barryt/bar-interior2.jpg");
+  /* filter: blur(2px); */
+  background-size: cover;
+  background-position: bottom bottom;
+
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.521);
+}
+
+#contact-message {
+  font-size: 2rem;
+  color: white;
+  margin: auto;
+}
+
+#contact-message h2 {
+  font-size: 2rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.secondary-contact-title {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+}
+
+.secondary-contact-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.highlight {
+  color: lightgreen;
+}
+
+#contact a {
+  color: white;
+  padding: 10px;
+  font-size: 5rem;
+}
+
+#github:hover {
+  color: #333;
+}
+
+#linkedin:hover {
+  color: #2867b2;
+}
+
+@media (min-width: 1000px) {
+  #contact-section {
+    margin: auto;
+    width: 1000px;
+    background-position: center top;
+  }
+
+  .neon-text {
+    font-size: 175px;
+  }
+}
+
+@media (max-height: 700px) {
+  #welcome-section,
+  #aboutme-section,
+  #contact-section,
+  #project-section {
+    height: 680px;
+  }
+}

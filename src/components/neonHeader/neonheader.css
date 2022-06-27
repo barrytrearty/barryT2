@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "neon";
+  src: url("../../data/barryt/neon_pixel-7.ttf");
+}
+
+.neon-text {
+  font-family: neon;
+  /* padding-left: 17vw; */
+  font-size: 17vw;
+  color: #ffd8d8;
+  text-shadow: 0.1vw 0vw 0.25vw #ffd8d8, 0.2vw 0vw 0.25vw #ffd8d8,
+    0.4vw 0vw 0.25vw #ffd8d8, 0.1vw 0vw 0vw #f25757, 0.2vw 0vw 0vw #f25757,
+    0.4vw 0vw 0vw #f25757, 0.1vw 0vw 0.1vw #f25757, 0.2vw 0vw 0.1vw #f25757,
+    0.4vw 0vw 0.1vw #f25757, 0.1vw 0vw 2vw #f25757, 0.2vw 0vw 0.2vw #f25757,
+    0.4vw 0vw 2vw #f25757, 0.1vw 0vw 1vw #e50b0b, 0.2vw 0vw 1vw #e50b0b,
+    0.4vw 0vw 5vw #e50b0b, 0.1vw 0vw 5vw #e50b0b, 0.2vw 0vw 20vw #e50b0b,
+    0.4vw 0vw 10vw #e50b0b, 0.1vw 0vw 10vw #e50b0b, 0.2vw 0vw 30vw #e50b0b,
+    0.4vw 0vw 10vw #e50b0b;
+}
+
+@keyframes flickering-logo {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
+.flicker {
+  animation: flickering-logo infinite 5s ease-in-out;
+}
+
+@media (min-width: 1000px) {
+  .neon-text {
+    font-size: 175px;
+  }
+}
+
+@media (max-width: 530px) {
+  .neon-text {
+    padding-top: 20px;
+    font-size: 90px;
+  }
+}

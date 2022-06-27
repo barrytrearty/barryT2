@@ -1,0 +1,31 @@
+#welcome-section {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../data/barryt/bar-entrance.jpg");
+  background-size: cover;
+  background-position: center top;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.521);
+}
+
+@media (min-width: 1000px) {
+  #welcome-section {
+    margin: auto;
+    width: 1000px;
+    background-position: center top;
+  }
+}
+
+/* @media (max-height: 800px) {
+  #welcome-section {
+    height: 500px;
+  }
+} */
+
+@media (max-height: 700px) {
+  #welcome-section,
+  #aboutme-section,
+  #contact-section,
+  #project-section {
+    height: 680px;
+  }
+}
