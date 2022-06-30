@@ -32,12 +32,13 @@ const Projects = () => {
         <div className="project-wrapper-row">
           <div className="box">
             <div className="imgBx">
-              <a href="https://clubstub-fe.vercel.app/home" target="_blank">
-                <img src={Project2} alt="" />
-              </a>
+              <img src={Project2} alt="" />
             </div>
             <div className="content">
-              <h3>O'Deals GAA Tickets</h3>
+              <a href="https://clubstub-fe.vercel.app/home" target="_blank">
+                {" "}
+                <h3>O'Deals GAA Tickets</h3>{" "}
+              </a>
 
               <div className="content-links">
                 <a href="https://clubstub-fe.vercel.app/home" target="_blank">
@@ -55,12 +56,12 @@ const Projects = () => {
 
           <div className="box">
             <div className="imgBx">
-              <a href="https://darts-calculator.vercel.app" target="_blank">
-                <img src={Project3} alt="" />
-              </a>
+              <img src={Project3} alt="" />
             </div>
             <div className="content">
-              <h3>Darts Score Browser App</h3>
+              <a href="https://darts-calculator.vercel.app" target="_blank">
+                <h3>Darts Score Browser App</h3>{" "}
+              </a>
 
               <div className="content-links">
                 <a href="https://darts-calculator.vercel.app" target="_blank">
@@ -78,12 +79,13 @@ const Projects = () => {
 
           <div className="box">
             <div className="imgBx">
-              <a href="https://end-of-day-ts.vercel.app//" target="_blank">
-                <img src={Project4} alt="" />
-              </a>
+              <img src={Project4} alt="" />
             </div>
             <div className="content">
-              <h3>End of Day Browser App</h3>
+              <a href="https://end-of-day-ts.vercel.app//" target="_blank">
+                {" "}
+                <h3>End of Day Browser App</h3>
+              </a>
 
               <div className="content-links">
                 <a href="https://end-of-day-ts.vercel.app//" target="_blank">

@@ -44,6 +44,10 @@
   min-height: 100vh;
 }
 
+#project-wrapper-row {
+  overflow-y: scroll;
+}
+
 .box {
   position: relative;
   width: 300px;
