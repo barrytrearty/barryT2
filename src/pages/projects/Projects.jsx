@@ -32,6 +32,29 @@ const Projects = () => {
         <div className="project-wrapper-row">
           <div className="box">
             <div className="imgBx">
+              <img src={Project3} alt="" />
+            </div>
+            <div className="content">
+              <a href="https://darts-calculator.vercel.app" target="_blank">
+                <h3>Darts Score Browser App</h3>{" "}
+              </a>
+
+              <div className="content-links">
+                <a href="https://darts-calculator.vercel.app" target="_blank">
+                  <span>Live site</span>
+                </a>
+                <a
+                  href="https://github.com/barrytrearty/DartsCalculator"
+                  target="_blank"
+                >
+                  <span>Source code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="box">
+            <div className="imgBx">
               <img src={Project2} alt="" />
             </div>
             <div className="content">
@@ -46,29 +69,6 @@ const Projects = () => {
                 </a>
                 <a
                   href="https://github.com/barrytrearty/clubstub-fe"
-                  target="_blank"
-                >
-                  <span>Source code</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="box">
-            <div className="imgBx">
-              <img src={Project3} alt="" />
-            </div>
-            <div className="content">
-              <a href="https://darts-calculator.vercel.app" target="_blank">
-                <h3>Darts Score Browser App</h3>{" "}
-              </a>
-
-              <div className="content-links">
-                <a href="https://darts-calculator.vercel.app" target="_blank">
-                  <span>Live site</span>
-                </a>
-                <a
-                  href="https://github.com/barrytrearty/DartsCalculator"
                   target="_blank"
                 >
                   <span>Source code</span>
